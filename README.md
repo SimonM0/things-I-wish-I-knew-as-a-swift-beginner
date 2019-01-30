@@ -38,7 +38,7 @@ extension UITextField {
 ```
 
 ## 3. Use [SnapKit](https://github.com/SnapKit/SnapKit) instead of Autolayout
-** Disclaimer: There's nothing wrong with Autolayout. **
+**Disclaimer: There's nothing wrong with Autolayout.**
 But personally I find [SnapKit's](https://github.com/SnapKit/SnapKit) syntax more convienient, shorter and easier to understand when I come back to it.
 ### Comparison
 ```swift
