@@ -79,12 +79,12 @@ class YourViewController: UIViewController {
     * This sets up the background for the screen
     */
   fileprivate func setupBackground() {
-      view.addSubview(backgroundImage)
-      backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
-      backgroundImage.snp.makeConstraints {
-          make in
-          make.margins.equalTo(view)
-      }
+    view.addSubview(backgroundImage)
+    backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
+    backgroundImage.snp.makeConstraints {
+      make in
+      make.margins.equalTo(view)
+    }
   }
 }
 ```
