@@ -1,4 +1,4 @@
-# Things I wish I'd known as swift beginner
+# Things I wish I knew as a swift beginner
 This is a list of things I wish I'd known as a beginner to swift. Coming from a front end background, I find alot of things I want to do are the same, but different.
 
 ![Same Same](https://media.giphy.com/media/C6JQPEUsZUyVq/giphy.gif)
