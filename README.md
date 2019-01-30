@@ -1,5 +1,7 @@
-# swift-beginners-list-of-quirks
-Things I wish I'd known as a beginner to swift
+# Swift Beginners List of quirks
+This is a list of things I wish I'd known as a beginner to swift. Coming from a Front End background, alot of things are different but similar.
+
+![Same Same](https://media.giphy.com/media/C6JQPEUsZUyVq/giphy.gif)
 
 ## 1. UITableViewController slows animation
 Rendering animations that overlap tables will cause the frame rate to drop because of the composition of table and cells.
