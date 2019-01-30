@@ -60,3 +60,31 @@ textView.snp.makeConstraints {
   make.right.equalTo(self.anotherTextView.snp.left)
 }
 ```
+
+## 4. How to set a background image
+In this example I am using SnapKit, but you can use Autolayout if you wanted to.
+### Solution
+```swift
+class YourViewController: UIViewController {
+  let backgroundImage = UIImageView(
+    image: UIImage(named: "your-background-image")
+  )
+
+  init() {
+    super.init(nibName: nil, bundle: nil)
+    self.setupLoader()
+  }
+
+  /**
+    * This sets up the background for the screen
+    */
+  fileprivate func setupBackground() {
+      view.addSubview(backgroundImage)
+      backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
+      backgroundImage.snp.makeConstraints {
+          make in
+          make.margins.equalTo(view)
+      }
+  }
+}
+```
