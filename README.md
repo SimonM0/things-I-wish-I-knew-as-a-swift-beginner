@@ -72,7 +72,7 @@ class YourViewController: UIViewController {
 
   init() {
     super.init(nibName: nil, bundle: nil)
-    self.setupLoader()
+    self.setupBackground()
   }
 
   /**
