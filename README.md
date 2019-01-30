@@ -36,3 +36,23 @@ extension UITextField {
     }
 }
 ```
+
+## 3. Use [SnapKit](https://github.com/SnapKit/SnapKit) instead of Autolayout
+** Disclaimer: There's nothing wrong with Autolayout. **
+But personally I find [SnapKit's](https://github.com/SnapKit/SnapKit) syntax more convienient, shorter and easier to understand when I come back to it.
+### Comparison
+```swift
+  // Autolayout
+  textView.translatesAutoresizingMaskIntoConstraints = false
+  textView.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
+  textView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10).isActive = true
+  textView.rightAnchor.constraint(equalTo: self.anotherTextView.leftAnchor).isActive = true
+
+  // Snap Kit
+  textView.snp.makeConstraints {
+    make in
+    make.top.equalTo(self.snp.top)
+    make.left.equalTo(self.snp.left).offsetBy(10)
+    make.right.equalTo(self.anotherTextView.snp.left)
+  }
+```
