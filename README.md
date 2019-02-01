@@ -90,7 +90,8 @@ class YourViewController: UIViewController {
 }
 ```
 
-### 5. What the equivalent of Javascripts setTimeOut function is in swift
+## 5. What the equivalent of Javascripts setTimeOut function is in swift
+I use setTimeOut in javascript sometimes to delay things. It pretty easy to do in Swift, but the code is a little different.
 ```swift
   Timer.scheduledTimer(
     withTimeInterval: 1,
