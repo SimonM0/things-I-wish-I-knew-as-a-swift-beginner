@@ -102,3 +102,20 @@ I use setTimeOut in javascript sometimes to delay things. It pretty easy to do i
     }
   )
 ```
+
+## 6. How to easily cast firebase data
+If you're only storing string values in your firebase database then this can help you to convert the return snapshop to a dictionary.
+```swift
+  self.ref?
+      .child("your/data/path")
+      .observeSingleEvent(
+        of: .value,
+        with: {
+          (snapshot) in
+             guard let data = snapshot.value as? [String : String] else {
+                return
+             }
+             // data["yourProp"]
+          }
+      )
+```
