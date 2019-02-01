@@ -89,7 +89,7 @@ class YourViewController: UIViewController {
 }
 ```
 
-### 5. What the equivalentDictionary of a setTimeOut in swift is
+### 5. What the equivalent of a setTimeOut in swift is
 ```swift
   Timer.scheduledTimer(
     withTimeInterval: 1,
