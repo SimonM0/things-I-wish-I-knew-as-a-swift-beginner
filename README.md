@@ -1,3 +1,4 @@
+![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg)
 # Things I wish I knew as a swift beginner
 This is a list of things I wish I'd known as a beginner to swift. Coming from a front end background, I find alot of things I want to do are the same, but different.
 
