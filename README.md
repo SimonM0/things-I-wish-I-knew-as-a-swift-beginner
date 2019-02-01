@@ -112,10 +112,10 @@ If you're only storing string values in your firebase database then this can hel
         of: .value,
         with: {
           (snapshot) in
-             guard let data = snapshot.value as? [String : String] else {
-                return
-             }
-             // data["yourProp"]
+          guard let data = snapshot.value as? [String : String] else {
+            return
           }
+          // data["yourProp"]
+        }
       )
 ```
