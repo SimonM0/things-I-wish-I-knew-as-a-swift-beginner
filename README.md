@@ -119,3 +119,6 @@ If you're only storing string values in your firebase database then this can hel
         }
       )
 ```
+
+## 7. How to pretty format arrays and objects in the console
+I was using `print` alot of the time to output data. But actually, there's also a command called `dump`. `dump` will format the object for you.
