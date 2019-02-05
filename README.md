@@ -149,6 +149,7 @@ console.log(joinedString);
 ```swift
 // Swift version
 let helloWorldArray = ["Hello", "World"]
-let joinedString = helloWorldArray.reduce("Result: ") { "\($0) \($1)" }
+let joinedString = helloWorldArray
+    .reduce("Result: ") { "\($0) \($1)" }
 print(joinedString)
 ```
