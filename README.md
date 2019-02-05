@@ -133,3 +133,22 @@ I was using `print` alot of the time to output data. But actually, there's also 
 ]
 
 ```
+
+## 8. How to use reduce in swift
+Reduce in swift isn't hard, it's just different. I wasted quite alot of time because the stuff I found had rather convoluted examples. So here's a simple example of concatenating hello world in Javascript and how the same thing can be done in Swift.
+```javascript
+// Javascript version
+const helloWorldArray = ["Hello", "World"];
+const joinedString = helloWorldArray
+  .reduce(
+    (endResult, value) => `${endResult} ${value}`,
+    "Result:"
+  );
+console.log(joinedString);
+```
+```swift
+// Swift version
+let helloWorldArray = ["Hello", "World"]
+let joinedString = helloWorldArray.reduce("Result: ") { "\($0) \($1)" }
+print(joinedString)
+```
