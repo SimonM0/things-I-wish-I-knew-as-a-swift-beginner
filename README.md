@@ -102,6 +102,12 @@ I use setTimeOut in javascript sometimes to delay things. It pretty easy to do i
     }
   )
 ```
+A better way of doing this was recommended by [halleys_comet69](https://www.reddit.com/user/halleys_comet69) How elegant and succinct.
+```
+DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+    print("This is delayed.")
+}
+``` 
 
 ## 6. How to easily cast firebase data
 If you're only storing string values in your firebase database then this can help you to convert the return snapshop to a dictionary.
