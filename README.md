@@ -159,3 +159,10 @@ let joinedString = helloWorldArray
     .reduce("Result: ") { "\($0) \($1)" }
 print(joinedString)
 ```
+
+Here is a better example by [DonaldPShimoda](https://www.reddit.com/user/DonaldPShimoda). The `(1)` is the initial value of the reduction.
+```swift
+let numbers = [3, 5, 2, 5, 6, 2, 4]
+let product = numbers.reduce(1) { (previousNumber, currentNumber) in previousNumber * currentNumber }
+print(product)
+```
