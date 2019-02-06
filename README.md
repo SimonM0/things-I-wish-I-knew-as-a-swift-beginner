@@ -166,3 +166,11 @@ let numbers = [3, 5, 2, 5, 6, 2, 4]
 let product = numbers.reduce(1) { (previousNumber, currentNumber) in previousNumber * currentNumber }
 print(product)
 ```
+
+## 9. You can also use logical operator in a reduce
+I learnt this off [anymbryne](https://www.reddit.com/user/anymbryne). Here's the same example as above. Very cool stuff! ❤️
+```swift
+let numbers = [3, 5, 2, 5, 6, 2, 4]
+let product = numbers.reduce(1, *)
+print(product)
+```
