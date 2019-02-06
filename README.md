@@ -102,7 +102,7 @@ I use setTimeOut in javascript sometimes to delay things. It pretty easy to do i
     }
   )
 ```
-A better way of doing this was recommended by [halleys_comet69](https://www.reddit.com/user/halleys_comet69) How elegant and succinct.
+A better way of doing this was recommended by [/u/halleys_comet69](https://www.reddit.com/user/halleys_comet69) How elegant and succinct.
 ```
 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
     print("This is delayed.")
@@ -160,7 +160,7 @@ let joinedString = helloWorldArray
 print(joinedString)
 ```
 
-Here is a better example by [DonaldPShimoda](https://www.reddit.com/user/DonaldPShimoda). The `(1)` is the initial value of the reduction.
+Here is a better example by [/u/DonaldPShimoda](https://www.reddit.com/user/DonaldPShimoda). The `(1)` is the initial value of the reduction.
 ```swift
 let numbers = [3, 5, 2, 5, 6, 2, 4]
 let product = numbers.reduce(1) { (previousNumber, currentNumber) in previousNumber * currentNumber }
@@ -168,7 +168,7 @@ print(product)
 ```
 
 ## 9. You can also use logical operator in a reduce
-I learnt this off [anymbryne](https://www.reddit.com/user/anymbryne). Here's the same example as above. Very cool stuff! ❤️
+I learnt this off [/u/anymbryne](https://www.reddit.com/user/anymbryne). Here's the same example as above. Very cool stuff! ❤️
 ```swift
 let numbers = [3, 5, 2, 5, 6, 2, 4]
 let product = numbers.reduce(1, *)
