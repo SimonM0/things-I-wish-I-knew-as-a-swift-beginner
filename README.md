@@ -4,6 +4,18 @@ Here's a list of things I wish I'd known as a swift beginner. Coming from a fron
 
 ![Same Same](https://media.giphy.com/media/C6JQPEUsZUyVq/giphy.gif)
 
+## Contents
+1. [UITableViewController slows animation](#1-uitableviewcontroller-slows-animation)
+2. [UITextField field padding](#2-uitextfield-field-padding)
+3. [Use SnapKit instead of Autolayout](#3-use-snapkit-instead-of-autolayout)
+4. [How to set a background image](#4-how-to-set-a-background-image)
+5. [What the equivalent of Javascripts setTimeOut function is in swift](#5-what-the-equivalent-of-javascripts-settimeout-function-is-in-swift)
+6. [How to easily cast firebase data](#6-how-to-easily-cast-firebase-data)
+7. [How to pretty format arrays and objects in the console](#7-how-to-pretty-format-arrays-and-objects-in-the-console)
+8. [How to use reduce in swift](#8-how-to-use-reduce-in-swift)
+9. [You can also use logical operator in a reduce](#9-you-can-also-use-logical-operator-in-a-reduce)
+10. [Swift is more than just iOS development ;) (5, 7, 8 are the only swift-specific things)](#10-swift-is-more-than-just-ios-development--5-7-8-are-the-only-swift-specific-things)
+
 ## 1. UITableViewController slows animation
 Rendering animations that overlap tables will cause the frame rate to drop because of the composition of table and cells.
 ### Solution
