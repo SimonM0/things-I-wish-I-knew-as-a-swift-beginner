@@ -41,6 +41,8 @@ extension UITextField {
 ## 3. Use [SnapKit](https://github.com/SnapKit/SnapKit) instead of Autolayout
 **Disclaimer: There's nothing wrong with Autolayout. SnapKit uses it under the hood as pointed out by [/u/fear731](https://www.reddit.com/user/fear731).**  
 But personally I find [SnapKit's](https://github.com/SnapKit/SnapKit) syntax more convienient, shorter and easier to understand when I come back to it.
+
+Also Autolayout is backed by the system and should be studied first no matter what. As suggested by [/u/and_roman](https://www.reddit.com/user/and_roman). Which I agree with as I first learn Autolayout before using SnapKit so just diving into SnapKit without have ever used AutoLayout might make things more complicated.
 ### Comparison
 ```swift
 /**
@@ -141,7 +143,7 @@ I was using `print` alot of the time to output data. But actually, there's also 
 ```
 
 ## 8. How to use reduce in swift
-Reduce in swift isn't hard, it's just different. I wasted quite alot of time because the stuff I found had rather convoluted examples. So here's a simple example of concatenating hello world in Javascript and how the same thing can be done in Swift.
+Reduce in swift isn't hard, it's just a different syntax as pointed out by [/u/and_roman](https://www.reddit.com/user/and_roman). I wasted quite alot of time because the stuff I found had rather convoluted examples. So here's a simple example of concatenating hello world in Javascript and how the same thing can be done in Swift.
 ```javascript
 // Javascript version
 const helloWorldArray = ["Hello", "World"];
