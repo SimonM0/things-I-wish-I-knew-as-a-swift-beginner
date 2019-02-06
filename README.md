@@ -174,3 +174,7 @@ let numbers = [3, 5, 2, 5, 6, 2, 4]
 let product = numbers.reduce(1, *)
 print(product)
 ```
+
+## 10. Swift is more than just iOS development ;) (5, 7, 8 are the only swift-specific things)
+[/u/Terrible_Umpire](https://www.reddit.com/user/Terrible_Umpire) Pointed this one out to me 😙
+
