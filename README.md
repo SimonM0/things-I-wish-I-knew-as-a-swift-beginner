@@ -212,7 +212,7 @@ print(product)
 ## 10. Swift is more than just iOS development ;) (5, 7, 8 are the only swift-specific things)
 [/u/Terrible_Umpire](https://www.reddit.com/user/Terrible_Umpire) Pointed this one out to me 😙
 
-## 11. What the swift equivalent of a void function is
+## 11. What the swift equivalent of a void function is and how to type it
 I had trouble typing void functions in the beginnning, it wasn't as easy to find an example as I had hoped. So just putting this here for convienience.
 ```javascript
 // Javascript
