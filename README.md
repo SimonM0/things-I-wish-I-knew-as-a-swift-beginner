@@ -215,9 +215,11 @@ print(product)
 ## 11. What the swift equivalent of a void function is
 I had trouble typing void functions in the beginnning, it wasn't as easy to find an example as I had hoped. So just putting this here for convienience.
 ```javascript
+// Javascript
 const logHelloWorld = () => console.log('Hello World');
 ```
 ```swift
+// Swift
 let logHelloWorld: (() -> Void) = {
     () in
     print("Hello World")
