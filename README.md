@@ -5,7 +5,7 @@ Here's a list of things I wish I'd known as a swift beginner, so far the list ma
 ![Same Same](https://media.giphy.com/media/C6JQPEUsZUyVq/giphy.gif)
 
 ## Contents
-1. [UITableViewController slows animation](#1-uitableviewcontroller-slows-animation)
+1. [Text shadow slows animation](#1-text-shadow-slows-animation)
 2. [UITextField field padding](#2-uitextfield-field-padding)
 3. [Use SnapKit instead of Autolayout](#3-use-snapkit-instead-of-autolayout)
 4. [How to set a background image](#4-how-to-set-a-background-image)
@@ -15,18 +15,38 @@ Here's a list of things I wish I'd known as a swift beginner, so far the list ma
 8. [How to use reduce in swift](#8-how-to-use-reduce-in-swift)
 9. [You can also use logical operator in a reduce](#9-you-can-also-use-logical-operator-in-a-reduce)
 10. [Swift is more than just iOS development ;) (5, 7, 8 are the only swift-specific things)](#10-swift-is-more-than-just-ios-development--5-7-8-are-the-only-swift-specific-things)
+11. [What the swift equivalent of a void function](#11-what-the-swift-equivalent-of-a-void-function-is)
 
-## 1. UITableViewController slows animation
-Rendering animations that overlap tables will cause the frame rate to drop because of the composition of table and cells.
+## 1. Text shadow slows animation
+Rendering animations that has or overlaps text with text shadow on will suffer a performance impact. The solution I found was to rasterize the UILabel's layer.
 ### Solution
 There is an option to rasterize the layer, effectively mitigating the lag
 ```swift
-class YourTableViewController: UITableViewController {
- override func viewDidLoad() {
-    super.viewDidLoad()
-    tableView.layer.shouldRasterize = true;
-    tableView.layer.rasterizationScale = 2
-  }
+class MyViewController : UIViewController {
+    let label: UILabel = {
+        let label = UILabel()
+        label.frame = CGRect(x: 150, y: 200, width: 200, height: 20)
+        label.text = "Hello World!"
+        label.textColor = .black
+        label.layer.shadowColor = UIColor.black.cgColor
+        label.layer.shadowOpacity = 1;
+        label.layer.shadowRadius = 5;
+        label.layer.shadowOffset = CGSize(width: 0, height: 2)
+        return label
+    }()
+
+    override func loadView() {
+        let view = UIView()
+        view.backgroundColor = .white
+
+        // Rasterize the layer using shouldRasterize and
+        // set the rasterizationScale for retina screens
+        label.layer.shouldRasterize = true;
+        label.layer.rasterizationScale = 2
+        
+        view.addSubview(label)
+        self.view = view
+    }
 }
 ```
 
@@ -192,3 +212,14 @@ print(product)
 ## 10. Swift is more than just iOS development ;) (5, 7, 8 are the only swift-specific things)
 [/u/Terrible_Umpire](https://www.reddit.com/user/Terrible_Umpire) Pointed this one out to me 😙
 
+## 11. What the swift equivalent of a void function is
+I had trouble typing void functions in the beginnning, it wasn't as easy to find an example as I had hoped. So just putting this here for convienience.
+```javascript
+const logHelloWorld = () => console.log('Hello World');
+```
+```swift
+let logHelloWorld: (() -> Void) = {
+    () in
+    print("Hello World")
+}
+```
