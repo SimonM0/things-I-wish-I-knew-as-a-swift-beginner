@@ -228,4 +228,4 @@ let logHelloWorld: (() -> Void) = {
 ```
 
 ## 12. That Grand Central Dispatch exists
-I won't go into too much detail about Grand Central Dispatch here as there'se better resources for this, for eample this [post](https://learnappmaking.com/grand-central-dispatch-swift/). But I wish I new this existed before I wasted countless hours trying to "speed things up".
+I won't go into too much detail about Grand Central Dispatch here as there are better resources for this, for example [this post](https://learnappmaking.com/grand-central-dispatch-swift/). But I wish I new this existed before I wasted countless hours trying to "speed things up".
