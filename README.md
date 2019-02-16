@@ -15,7 +15,8 @@ Here's a list of things I wish I'd known as a swift beginner, so far the list ma
 8. [How to use reduce in swift](#8-how-to-use-reduce-in-swift)
 9. [You can also use logical operator in a reduce](#9-you-can-also-use-logical-operator-in-a-reduce)
 10. [Swift is more than just iOS development ;) (5, 7, 8 are the only swift-specific things)](#10-swift-is-more-than-just-ios-development--5-7-8-are-the-only-swift-specific-things)
-11. [What the swift equivalent of a void function](#11-what-the-swift-equivalent-of-a-void-function-is)
+11. [What the swift equivalent of a void function is and how to type it](#11-what-the-swift-equivalent-of-a-void-function-is-and-how-to-type-it)
+12. [That grand central dispatch exists](#12-that-grand-central-dispatch-exists)
 
 ## 1. Text shadow slows animation
 Rendering animations that has or overlaps text with text shadow on will suffer a performance impact. The solution I found was to rasterize the UILabel's layer.
@@ -225,3 +226,6 @@ let logHelloWorld: (() -> Void) = {
     print("Hello World")
 }
 ```
+
+## 12. That Grand Central Dispatch exists
+I won't go into too much detail about Grand Central Dispatch here as there'se better resources for this, for eample this [post](https://learnappmaking.com/grand-central-dispatch-swift/). But I wish I new this existed before I wasted countless hours trying to "speed things up".
