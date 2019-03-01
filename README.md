@@ -1,6 +1,6 @@
 ![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg)
 # Things I wish I knew as a swift beginner
-Here's a list of things I wish I'd known as a swift beginner, so far the list mainly contains iOS centered swift things because I'm developing for iOS, but this will change as the list grows. Coming from a front end background, I find alot of things I want to do are the same, but different.
+Here's a list of things I wish I had known as a swift beginner, so far the list mainly contains iOS centered swift things because I'm developing for iOS, but this will change as the list grows. Coming from a front end background, I find alot of things I want to do are the same, but different.
 
 ![Same Same](https://media.giphy.com/media/C6JQPEUsZUyVq/giphy.gif)
 
